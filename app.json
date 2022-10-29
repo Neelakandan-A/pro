@@ -1,5 +1,12 @@
 {
 	"name": "netware",
 	"description": "Netware Heroku",
+	"keywords": ["netware"],
+	"env": {
+		"EMAIL": {
+			"value": "bandnrock1234@gmail.com",
+            		"required": true
+		}
+	},
 	"stack": "container"
 }
