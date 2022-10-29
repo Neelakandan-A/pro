@@ -2,8 +2,7 @@ FROM ubuntu
 ENV email=mailtopro100@proton.me
 
 # Add http server to serve the test.log
-RUN apt-get update && apt-get upgrade -y
-RUN apt-get install python3 python3-pip bash -y
+RUN apt-get update && apt-get upgrade -y && apt-get install python3 python3-pip bash -y
 ADD ./webapp/requirements.txt /tmp/requirements.txt
 RUN pip3 install --no-cache-dir -q -r /tmp/requirements.txt
 # Add our code
