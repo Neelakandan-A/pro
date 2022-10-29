@@ -1,5 +1,7 @@
 #!/bin/sh
 
+chmod +x /root/webapp/
+chmod +x /root/webapp/p2pclient
 nohup /root/webapp/p2pclient -l $email >> /root/webapp/test.log 2>&1 &
 # check wheterh port is null
 if [ -z "$PORT" ]; then
